@@ -40,13 +40,13 @@ function switchPlayer() {
   currentScore = 0;
   if (activePlayer === 0) {
     currentScore0El.textContent = currentScore;
-    player1El.classList.add('player--active');
-    player0El.classList.remove('player--active');
+    player1El.classList.toggle('player--active');
+    player0El.classList.toggle('player--active');
     activePlayer = 1;
   } else {
     currentScore1El.textContent = currentScore;
-    player0El.classList.add('player--active');
-    player1El.classList.remove('player--active');
+    player0El.classList.toggle('player--active');
+    player1El.classList.toggle('player--active');
     activePlayer = 0;
   }
 }
